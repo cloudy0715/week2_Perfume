@@ -3,10 +3,10 @@
     padding: 0 15px;
     margin: 0 auto;
     @include pad{
-        max-width: 799px;
+        max-width: 720px;
     }
     @include mobile{
-        max-width: 450px;
+        max-width: 540px;
     }
 }
 

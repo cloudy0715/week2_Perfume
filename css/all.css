@@ -73,13 +73,13 @@ img {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 799px;
+    max-width: 720px;
   }
 }
 
 @media (max-width: 560px) {
   .container {
-    max-width: 450px;
+    max-width: 540px;
   }
 }
 
