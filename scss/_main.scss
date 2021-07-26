@@ -67,16 +67,25 @@ p{
     text-align: center;
 }
 
-.m-none{
+.m-none {
     @include mobile{
         display: none;
     }
 }
+
 .pc-none, .menu-mb{
     display: none;
     @include mobile {
         display: block;
     }
+}
+
+.mr-1 {
+    margin-right: $mt-base /2;
+}
+
+.material-icons {
+    vertical-align: bottom;
 }
 
 .logo a, .footer_logo a{
@@ -119,7 +128,7 @@ p{
                 display: none;
                 position: absolute;
                 top: -5px;
-                right: -10px;
+                right: -5px;
                 background: #916000;
                 color: #ffffff;
                 border-radius: 100%;
@@ -134,6 +143,13 @@ p{
             span{
                 @include mobile{
                     display: none;
+                }
+                &.cart-icon {
+                    @include mobile{
+                        display: block;
+                        font-size: 25px;
+                        margin-right: 0;
+                    }
                 }
             }
         }
@@ -209,7 +225,7 @@ p{
             a{
                 color: #fff;
                 font-size: 28px;
-                margin-top: $mt-1 * 2;
+                margin-top: $mt-base * 2;
                 &:hover{
                     background-color: rgba(255, 255, 255, 0.4);
                 }
@@ -250,8 +266,8 @@ p{
             align-items: center;
             @include mobile{
                 width: 100%;
-                margin-top: $mt-1;
-                margin-bottom: $mb-1 * 4;
+                margin-top: $mt-base;
+                margin-bottom: $mb-base * 4;
             }
             .topProduct-text{
                 max-width: 350px;
@@ -262,7 +278,7 @@ p{
                     max-width: 350px;
                 }
                 a {
-                    margin-top: $mt-1 * 2;
+                    margin-top: $mt-base * 2;
                     &:hover {
                         text-decoration: underline #AC8A46;
                     }
@@ -276,10 +292,10 @@ p{
                 ul li{
                     margin-bottom: 52px;
                     @include pad{
-                        margin-bottom: $mb-1 * 2;
+                        margin-bottom: $mb-base * 2;
                     }
                     p{
-                        margin-top: $mt-1 * 0.5;
+                        margin-top: $mt-base * 0.5;
                         @include pad {
                             font-size: 14px;
                         }
@@ -291,7 +307,7 @@ p{
                 .link-border{
                     color: #000000;
                     border: 2px solid #000000;
-                    margin-top: $mt-1;
+                    margin-top: $mt-base;
                     font-size: 20px;
                     padding: 12px 0;
                     @include pad {
@@ -326,17 +342,17 @@ p{
             margin: 16px 0;
         }
         h3 {
-            margin-top: $mt-1;
+            margin-top: $mt-base;
         }
         .price {
-            margin-top: $mt-1 * 2;
+            margin-top: $mt-base * 2;
             @include mobile {
-                margin-top: $mt-1 * 0.5;
+                margin-top: $mt-base * 0.5;
             }
             span{
                 color: #8D8D8D;
                 text-decoration: line-through;
-                margin-left: $ml-1;
+                margin-left: $ml-base;
             }
         }
         .sold-out{
@@ -386,7 +402,7 @@ p{
     .recycling-text{
         max-width: 350px;
         p{
-            margin-top: $mt-1 * 2;
+            margin-top: $mt-base * 2;
         }
     }
 }
@@ -466,7 +482,7 @@ p{
             p{
                 color: #ffffff;
                 font-size: 14px;
-                margin-left: $mt-1 * 2.5;
+                margin-left: $mt-base * 2.5;
                 font-weight: 500;
                 @include mobile{
                     margin-left: 25px;
@@ -477,7 +493,7 @@ p{
         display: flex;
         align-items: center;
         li{
-            margin-left: $mt-1 * 4.5;
+            margin-left: $mt-base * 4.5;
             a{
                 color: #ffffff;
                 font-size: 20px;
