@@ -4,7 +4,7 @@
   margin: 0 auto;
   width: 100%;
   @include pad {
-    max-width: 720px;
+    max-width: 100%;
   }
   @include mobile {
     max-width: 540px;
