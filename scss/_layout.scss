@@ -78,6 +78,10 @@ p {
   text-align: center;
 }
 
+.link-hover-underline:hover {
+  text-decoration: underline;
+}
+
 .d-md-none {
   @include pad {
     display: none;

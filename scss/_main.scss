@@ -165,9 +165,6 @@
     }
     a {
         margin-top: $mt-base * 2;
-        &:hover {
-            text-decoration: underline #ac8a46;
-        }
     }
     p {
         font-family: "PingFang TC";
@@ -252,9 +249,6 @@
     @include mobile {
         padding: 40px 0;
         flex-direction: column;
-    }
-    a:hover {
-        text-decoration: underline #ac8a46;
     }
 }
 .recycling .recycling-img {
