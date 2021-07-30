@@ -1,0 +1,247 @@
+.container {
+  max-width: 1140px; //手機版有左右留白15px，先預留30px
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+  @include pad {
+    max-width: 720px;
+  }
+  @include mobile {
+    max-width: 540px;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ac8a46;
+}
+
+body {
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+h1,
+.h1 {
+  font-size: 40px;
+  font-weight: bold;
+  @include mobile {
+    font-size: 32px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 32px;
+  font-weight: bold;
+  @include pad {
+    font-size: 28px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+  @include pad {
+    font-size: 20px;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.font-md {
+  font-size: 28px;
+}
+
+.link-border {
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 5px 0;
+  display: block;
+  text-align: center;
+}
+
+.d-md-none {
+  @include pad {
+    display: none;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.pc-none,
+.menu-mb {
+  display: none;
+  @include pad {
+    display: block;
+  }
+}
+
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.mt-1 {
+  margin-top: $mt-base * 0.5;
+}
+
+.mt-2 {
+  margin-top: $mt-base;
+}
+
+.mr-1 {
+  margin-right: $mr-base * 0.5; //4
+}
+.mr-2 {
+  margin-right: $mr-base; //8
+}
+.mr-3 {
+  margin-right: $mr-base * 1.5; //12
+}
+.mr-4 {
+  margin-right: $mr-base * 2; //16
+}
+
+.mb-1 {
+  margin-bottom: $mb-base * 0.5;
+}
+.mb-2 {
+  margin-bottom: $mb-base;
+}
+.mb-3 {
+  margin-bottom: $mb-base * 1.5;
+}
+.mb-4 {
+  margin-bottom: $mb-base * 2;
+}
+.mb-5 {
+  margin-bottom: $mb-base * 2.5; //20
+}
+.mb-6 {
+  margin-bottom: $mb-base * 3; //24
+}
+.mb-7 {
+  margin-bottom: $mb-base * 3.5; //28
+}
+.mb-8 {
+  margin-bottom: $mb-base * 4; //32
+}
+.mb-9 {
+  margin-bottom: $mb-base * 5; //40
+}
+.mb-10 {
+  margin-bottom: $mb-base * 6; //48
+}
+.mb-11 {
+  margin-bottom: $mb-base * 7; //56
+}
+.mb-12 {
+  margin-bottom: $mb-base * 8; //60
+}
+
+.material-icons {
+  vertical-align: bottom;
+}
+.nav-btn {
+  background: #fff;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+}
+
+.logo a,
+.footer_logo a {
+  @include logo;
+  background-image: url(../images/d’Perfume.png);
+}
+
+.bg-primary {
+  background: #916000;
+}
+
+.d-flex {
+  display: flex;
+}
+.col {
+  flex-direction: column;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.max-w-445 {
+  max-width: 445px;
+}
+.max-w-350 {
+  max-width: 350px;
+}
+.w-100 {
+  width: 100%;
+}
+.py-11 {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.btn-lg {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  border: 2px solid transparent;
+}
+.rounded-pill {
+  border-radius: 50rem;
+}
+.btn-outline-white {
+  color: #fff;
+  border-color: #fff;
+}
+.btn-outline-white:hover {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #fff;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.text-white {
+  color: #ffffff;
+}
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
