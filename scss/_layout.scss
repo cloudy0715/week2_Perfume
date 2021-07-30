@@ -65,6 +65,10 @@ p {
   font-size: 28px;
 }
 
+.fw-bold {
+  font-weight: bold;
+}
+
 .link-border {
   border: 2px solid #ffffff;
   border-radius: 30px;
@@ -244,4 +248,7 @@ p {
 ol {
   list-style-type: decimal;
   list-style-position: inside;
+  li::marker {
+    font-weight: bold;
+  }
 }
